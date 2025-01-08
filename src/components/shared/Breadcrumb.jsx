@@ -2,7 +2,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = ({ currentPath }) => {
+const Breadcrumb = ({ pathOn, currentPath = "", subCurrentPath = "" }) => {
   return (
     <>
       <div className="breadcrumb text-white flex items-center gap-3">
@@ -10,7 +10,10 @@ const Breadcrumb = ({ currentPath }) => {
         <Link className="hover:text-gray-300" to="/">
           Home
         </Link>
-        <h3>{` / ${currentPath}`}</h3>
+        <Link
+          to={pathOn ? `/${currentPath.toLowerCase()}` : ""}
+        >{` / ${currentPath}`}</Link>
+        <Link>{subCurrentPath ? ` / ${subCurrentPath}` : ""}</Link>
       </div>
     </>
   );

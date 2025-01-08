@@ -1,3 +1,51 @@
 .menu-list {
   border-top: 1.5px solid rgb(180, 180, 180);
 }
+
+.aytech-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.borderred {
+  border-bottom: 1.5px solid rgb(10, 180, 255);
+  padding-bottom: 2px;
+}
+
+* {
+  /* outline: 2px solid red; */
+}
+
+@media (max-width: 768px) {
+  .nav-list-container {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-container {
+    padding: 30px 40px;
+  }
+  .nav-list-container {
+    display: flex;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navbar-action {
+    align-items: center;
+  }
+  .search-icon {
+    padding: 0 0 5px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-container {
+    padding: 30px 80px;
+  }
+}

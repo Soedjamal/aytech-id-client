@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .icon-wa-msg {
+    display: none;
+  }
+}

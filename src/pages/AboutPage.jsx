@@ -1,10 +1,11 @@
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 import Introduction from "../components/home/Introduction";
+import ServiceQuality from "../components/home/ServiceQuality";
 import Breadcrumb from "../components/shared/Breadcrumb";
 import ContactFooter from "../components/shared/ContactFooter";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       <Navbar showOnScroll={false} />
@@ -18,6 +19,7 @@ const About = () => {
             </h2>
           </div>
         </div>
+        <ServiceQuality />
         <Introduction />
       </div>
       <ContactFooter />
@@ -26,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

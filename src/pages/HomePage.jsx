@@ -10,7 +10,7 @@ import ContactFooter from "../components/shared/ContactFooter";
 import ToUp from "../components/shared/ToUp";
 import WhatsAppIcon from "../components/shared/WhatsAppIcon";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Navbar />
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./home.css";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,10 +16,10 @@ const Hero = () => {
         className="hero-container w-full pt-[150px] bg-blue-700 z-0"
       >
         <div className="hero-title text-white flex justify-center w-full flex-col items-center px-[30px] text-center">
-          <h2 className="text-3xl font-bold mb-[35px]">
+          <h2 className="main-title text-3xl font-bold mb-[35px]">
             Mitra Terpercaya dalam Transformasi Digital
           </h2>
-          <p className="text-lg mb-[30px]">
+          <p className="main-title-desc text-lg mb-[30px]">
             Kami hadir untuk mendukung bisnis Anda melalui pengembangan web,
             aplikasi mobile, dan integrasi sistem
           </p>

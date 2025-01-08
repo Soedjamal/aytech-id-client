@@ -1,10 +1,20 @@
+import { useState } from "react";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
-import Portfolio from "../components/home/Portfolio";
+import { PortfolioCard } from "../components/home/Portfolio";
+import PortfolioNavigation from "../components/portfolio/PortfolioNavigation";
 import Breadcrumb from "../components/shared/Breadcrumb";
 import ContactFooter from "../components/shared/ContactFooter";
+import { projectItem } from "../utils/dummyItem";
 
 const PortfolioPage = () => {
+  const [isCategory, setIsCategory] = useState("View All");
+
+  const selectedItem =
+    isCategory === "View All"
+      ? projectItem
+      : projectItem.filter((item) => item.category === isCategory);
+
   return (
     <>
       <Navbar showOnScroll={false} />
@@ -20,7 +30,18 @@ const PortfolioPage = () => {
             </h4>
           </div>
         </div>
-        <Portfolio />
+
+        <PortfolioNavigation
+          handleCategory={setIsCategory}
+          selectedCategory={isCategory}
+        />
+        <div className="portfolio-card-container my-10 flex flex-col gap-8 items-center ">
+          {selectedItem.map((item, i) => (
+            <>
+              <PortfolioCard getItem={item} key={i} />
+            </>
+          ))}
+        </div>
       </div>
       <ContactFooter />
       <Footer />

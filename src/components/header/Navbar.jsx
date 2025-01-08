@@ -4,6 +4,19 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 
+const SearchBar = ({ onClick }) => {
+  return (
+    <>
+      <div className="search-bar-container fixed top-0 left-0 px-5 py-8 flex items-center justify-center w-full bg-white">
+        <div className="input-search px-8 py-3 bg-slate-300 rounded-full">
+          <input type="search" className="bg-transparent" />
+          <FontAwesomeIcon icon={faSearch} />
+        </div>
+      </div>
+    </>
+  );
+};
+
 const Sidebar = ({ onClick, left, ease }) => {
   const location = useLocation();
   return (
@@ -64,6 +77,8 @@ font-bold min-h-screen flex flex-col bg-white px-[20px] py-[25px] ${left}`}
 const Navbar = ({ showOnScroll }) => {
   const [isScroll, setIsScroll] = useState(false);
   const [sidebar, setSidebar] = useState(false);
+  const [searchBar, setSeachBar] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (showOnScroll == false) return setIsScroll((prev) => true);
@@ -91,7 +106,7 @@ const Navbar = ({ showOnScroll }) => {
         ></div>
       ) : null}
       <nav
-        className={`nav-container z-20 transition-all duration-500 drop-shadow-lg
+        className={`nav-container z-20 drop-shadow-lg
 fixed top-0 flex justify-between items-center w-full px-[15px] 
 py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
       >
@@ -106,39 +121,77 @@ py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
             />
           </div>
           <h3
-            className={`text-xl  ${isScroll ? "text-blue-500" : "text-white"}`}
+            className={`aytech-title text-xl ${isScroll ? "text-black" : "text-white"}`}
           >
-            Aytech.Id
+            AYTECH
           </h3>
         </div>
 
-        <div
-          className={`search-icon text-3xl}  ${isScroll ? "text-black" : "text-white"}`}
-        >
-          <FontAwesomeIcon className="text-xl" icon={faSearch} />
+        <div className="navbar-action flex gap-x-4">
+          <ul
+            className={`nav-list-container items-center gap-x-4  ${isScroll ? "text-black" : "text-white"}`}
+          >
+            <li className="nav-list">
+              <Link
+                className={`menu-link ${location.pathname === "/" ? "borderred" : ""}`}
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-list">
+              <Link
+                className={`menu-link ${location.pathname === "/about" ? "borderred" : ""}`}
+                to="/about"
+              >
+                Tentang Aytech
+              </Link>
+            </li>
+            <li className="nav-list">
+              <Link
+                className={`menu-link ${location.pathname === "/portfolio" ? "borderred" : ""}`}
+                to="/portfolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="nav-list">
+              <Link
+                className={`menu-link ${location.pathname === "/contact" ? "borderred" : ""}`}
+                to="/contact"
+              >
+                Hubungi Kami
+              </Link>
+            </li>
+          </ul>
+
+          <div
+            className={`search-icon text-3xl ${isScroll ? "text-black" : "text-white"}`}
+          >
+            <FontAwesomeIcon
+              onClick={() => setSeachBar(!searchBar)}
+              className="text-xl"
+              icon={faSearch}
+            />
+          </div>
         </div>
-        {/* <ul className="nav-list-container"> */}
-        {/*   <li className="nav-list"> */}
-        {/*     <Link to="/">Home</Link> */}
-        {/*     <Link to="/">Tentang Aytech</Link> */}
-        {/*     <Link to="/">Portfolio</Link> */}
-        {/*     <Link to="/">Hubungi Kami</Link> */}
-        {/*   </li> */}
-        {/* </ul> */}
+        {searchBar ? <SearchBar /> : null}
       </nav>
-      {sidebar ? (
-        <Sidebar
-          left="left-0"
-          ease="ease-out"
-          onClick={() => setSidebar(!sidebar)}
-        />
-      ) : (
-        <Sidebar
-          left="left-[-100%]"
-          ease="ease-in"
-          onClick={() => setSidebar(!sidebar)}
-        />
-      )}
+      <div className="sidebar-menu">
+        {sidebar ? (
+          <Sidebar
+            left="left-0"
+            ease="ease-out"
+            onClick={() => setSidebar(!sidebar)}
+          />
+        ) : (
+          <Sidebar
+            left="left-[-100%]"
+            ease="ease-in"
+            onClick={() => setSidebar(!sidebar)}
+          />
+        )}
+      </div>
     </>
   );
 };
