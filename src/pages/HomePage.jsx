@@ -9,6 +9,7 @@ import ServiceQuality from "../components/home/ServiceQuality";
 import ContactFooter from "../components/shared/ContactFooter";
 import ToUp from "../components/shared/ToUp";
 import WhatsAppIcon from "../components/shared/WhatsAppIcon";
+import "./styles/pages.css";
 
 const HomePage = () => {
   return (

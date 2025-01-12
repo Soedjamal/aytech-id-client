@@ -60,6 +60,8 @@
     position: absolute;
     left: 85%;
     top: 110%;
+    width: 400px;
+    height: 400px;
   }
   .second-picture {
     position: absolute;
@@ -70,4 +72,137 @@
   }
   .fourth-picture {
   }
+}
+
+@media (min-width: 1200px) {
+  .main-title {
+    font-size: 2.5rem;
+    line-height: 50px;
+    margin-top: 40px;
+  }
+  .hero-title {
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 75%;
+    padding: 0 200px;
+  }
+  .hero-container {
+    /* border: 3px solid orange; */
+    padding-top: 100px;
+    height: 100vh;
+  }
+  .hero-image-container {
+    /* border: 3px solid magenta; */
+    padding: 0;
+    margin: 0;
+    top: 0;
+    /* outline: 2px solid green; */
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .first-picture {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+  }
+  .second-picture {
+    position: absolute;
+    background-color: rgb(100, 100, 100);
+    top: 35%;
+    left: 82%;
+  }
+  .third-picture {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(150, 150, 150);
+    bottom: 10%;
+    right: 5%;
+  }
+  .fourth-picture {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    right: 20%;
+    background-color: rgb(200, 200, 200);
+  }
+  .portfolio-card-wrapper {
+    margin: 0 200px;
+  }
+  .service-item-group {
+    padding: 0 200px;
+    display: flex;
+    gap: 30px;
+  }
+  .our-service-title {
+    padding: 60px 200px;
+  }
+  .our-service-title p {
+    width: 50%;
+  }
+  .service-items-container {
+    padding: 40px 0 40px 0;
+  }
+  .introduction-title {
+    padding: 60px 200px;
+  }
+  .introduction-description-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 40px 200px;
+  }
+  .introduction-banner {
+    height: 380px;
+    width: 50%;
+  }
+  .introduction-description {
+    width: 50%;
+    margin-right: 40px;
+  }
+  .service-quality-group {
+    padding: 0 200px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .partner-card-wrapper {
+    overflow: hidden;
+    /* border: 2px solid red; */
+    margin: 0 450px;
+
+    display: flex;
+  }
+}
+
+@keyframes autoScrollX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.partner-card-group {
+  /* border: 2px solid red; */
+  display: flex;
+  /* gap: 50px; */
+  width: 100%;
+  animation: autoScrollX 10s linear infinite;
+}
+.partner-card-container {
+  border: 1px solid black;
+  border-radius: 20%;
+  margin: 0 25px;
+  padding: 10px;
+}
+
+* {
+  /* outline: 2px solid red; */
 }

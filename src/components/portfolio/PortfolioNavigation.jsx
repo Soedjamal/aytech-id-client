@@ -1,3 +1,5 @@
+import "./portfolio.css";
+
 const categories = ["View All", "IOT", "Mobile", "Web"];
 
 const PortfolioNavigation = ({ handleCategory, selectedCategory }) => {

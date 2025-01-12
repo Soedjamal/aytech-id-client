@@ -36,8 +36,8 @@ const ServiceItem = ({ title, icon, description }) => {
 const OurService = () => {
   return (
     <>
-      <div className="our-service-container w-full pt-[10px] bg-gray-200">
-        <div className="our-service-title flex flex-col items-center w-full pb-[30px] px-[30px] mt-[60px]">
+      <div className="our-service-container w-full pt-[10px]">
+        <div className="our-service-title flex flex-col items-center bg-gray-200 w-full pb-[30px] px-[30px] mt-[60px]">
           <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
             LAYANAN KAMI
           </h2>
@@ -47,35 +47,37 @@ const OurService = () => {
           </p>
         </div>
 
-        <ServiceItem
-          title="Web Development"
-          icon={faLaptopCode}
-          description="Kami menyediakan jasa pembuatan aplikasi berbasis web mulai dari
+        <div className="service-item-group">
+          <ServiceItem
+            title="Web Development"
+            icon={faLaptopCode}
+            description="Kami menyediakan jasa pembuatan aplikasi berbasis web mulai dari
                 UI/UX design, development, deployment ke server hingga training
                 penggunaan aplikasi ke user. Berbagai aplikasi web yang telah
                 kami kerjakan berupa sistem ERP, sistem manufactoring, sistem
                 stock opname, web profil perusahaan, hingga dashboard berbasis
                 web, dll."
-        />
-        <ServiceItem
-          title="Mobile Application Development"
-          icon={faMobileAlt}
-          description="Kami menyediakan jasa pembuatan aplikasi berbasis web mulai dari
+          />
+          <ServiceItem
+            title="Mobile Application Development"
+            icon={faMobileAlt}
+            description="Kami menyediakan jasa pembuatan aplikasi berbasis web mulai dari
                 UI/UX design, development, deployment ke server hingga training
                 penggunaan aplikasi ke user. Berbagai aplikasi web yang telah
                 kami kerjakan berupa sistem ERP, sistem manufactoring, sistem
                 stock opname, web profil perusahaan, hingga dashboard berbasis
                 web, dll."
-        />
-        <ServiceItem
-          title="IOT Internet Of Things"
-          icon={faMicrochip}
-          description="Kami menyediakan jasa pembuatan perangkat IoT berbasis Arduino,
+          />
+          <ServiceItem
+            title="IOT Internet Of Things"
+            icon={faMicrochip}
+            description="Kami menyediakan jasa pembuatan perangkat IoT berbasis Arduino,
           ESP32, dan platform sejenis, mencakup desain hardware, pemrograman, hingga
           integrasi dengan aplikasi mobile atau web. Proyek yang telah kami tangani
           meliputi smart home, monitoring suhu, sistem irigasi otomatis, hingga pengontrolan
           perangkat berbasis jaringan."
-        />
+          />
+        </div>
       </div>
     </>
   );

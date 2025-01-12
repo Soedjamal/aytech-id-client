@@ -7,11 +7,20 @@ import "./header.css";
 const SearchBar = ({ onClick }) => {
   return (
     <>
-      <div className="search-bar-container fixed top-0 left-0 px-5 py-8 flex items-center justify-center w-full bg-white">
+      <div
+        className="search-ba
+        r-container fixed top-0 px-5 py-8 flex items-center gap-3 
+        justify-center w-1/2"
+      >
         <div className="input-search px-8 py-3 bg-slate-300 rounded-full">
           <input type="search" className="bg-transparent" />
           <FontAwesomeIcon icon={faSearch} />
         </div>
+        <FontAwesomeIcon
+          icon={faX}
+          onClick={onClick}
+          className="close-icon bg-slate-200 rounded-lg border-2 border-black p-2 px-3"
+        />
       </div>
     </>
   );
@@ -129,7 +138,7 @@ py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
 
         <div className="navbar-action flex gap-x-4">
           <ul
-            className={`nav-list-container items-center gap-x-4  ${isScroll ? "text-black" : "text-white"}`}
+            className={`nav-list-container items-center gap-x-6  ${isScroll ? "text-black" : "text-white"}`}
           >
             <li className="nav-list">
               <Link
@@ -175,7 +184,9 @@ py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
             />
           </div>
         </div>
-        {searchBar ? <SearchBar /> : null}
+        {searchBar ? (
+          <SearchBar onClick={() => setSeachBar(!searchBar)} />
+        ) : null}
       </nav>
       <div className="sidebar-menu">
         {sidebar ? (

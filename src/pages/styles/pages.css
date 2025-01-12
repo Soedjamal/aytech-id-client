@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+  /* .about-title { */
+  /*   padding: 150px 0; */
+  /* } */
+  .about-header {
+    padding: 120px 0;
+  }
+  .portfolio-header {
+    padding: 120px 0;
+  }
+  .detail-portfolio-item {
+    padding: 120px 0;
+  }
+  .detail-portfolio-body {
+    padding: 0 200px;
+  }
+  .breadcrumb-container {
+    padding: 0 200px;
+  }
+  .portfolio-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+  }
+  .portfolio-item-group {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 calc(33.333% - 60px);
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+* {
+  /* outline: 2px solid red; */
+}

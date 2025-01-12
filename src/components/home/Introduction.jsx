@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Introduction = () => {
   return (
     <>
-      <div className="introduction-controller">
+      <div className="introduction-container">
         <div className="introduction-title bg-gray-200 flex flex-col items-center w-full py-[30px] px-[30px]">
           <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
             SIAPAKAH AYTECH GREAT SOLUTION
@@ -16,7 +16,11 @@ const Introduction = () => {
 
         <div className="introduction-description-container flex flex-col items-center px-[30px] py-[30px]">
           <div className="introduction-banner bg-slate-200 w-[380px] h-[280px]">
-            <img src="" alt="" />
+            <img
+              src="/images/a2.png"
+              className="w-full h-full object-contain"
+              alt=""
+            />
           </div>
 
           <div className="introduction-description mt-16">

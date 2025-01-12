@@ -3,3 +3,31 @@
     display: none;
   }
 }
+* {
+  /* outline: 2px solid red; */
+}
+
+@media (min-width: 1200px) {
+  .contact-footer {
+    padding: 0 0 40px 0;
+  }
+  .contact-footer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 200px;
+    align-items: center;
+  }
+  .contact-footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 20px;
+  }
+  .contact-btn-cta {
+    width: 30%;
+  }
+  .contact-footer-image {
+    width: 300px;
+    height: 350px;
+  }
+}

@@ -8,7 +8,7 @@ import { useProjectContext } from "../../context/ProjectItemContxt";
 export const PortfolioCard = ({ getItem }) => {
   const navigate = useNavigate();
   const { setIsId, setItem } = useProjectContext();
-  const { id, title, description, category } = getItem;
+  const { id, title, description, category, image } = getItem;
 
   const handleSelect = () => {
     navigate("/portfolio/detail-project");
@@ -20,7 +20,7 @@ export const PortfolioCard = ({ getItem }) => {
     <>
       <div className="portfolio-card-container snap-center flex flex-col items-center ">
         <div className="portfolio-image w-[360px] h-[360px] bg-slate-200 rounded-2xl">
-          <img src="" alt="" />
+          <img src={image} className="w-full h-full object-cover" alt="" />
         </div>
 
         <div className="portfolio-info w-full my-4">
@@ -61,7 +61,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="portfolio-card-wrapper scroll-smooth mx-[35px] overflow-x-auto snap-x snap-mandatory flex gap-4">
+        <div className="portfolio-card-wrapper scroll-smooth mx-[30px] overflow-x-auto snap-x snap-mandatory flex gap-4">
           {projectItem.map((item, i) => (
             <>
               <div className="my-8">

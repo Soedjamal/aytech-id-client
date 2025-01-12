@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <div
         id="hero"
-        className="hero-container w-full pt-[150px] bg-blue-700 z-0"
+        className="hero-container relative w-full pt-[150px] bg-firstBlue z-0"
       >
         <div className="hero-title text-white flex justify-center w-full flex-col items-center px-[30px] text-center">
           <h2 className="main-title text-3xl font-bold mb-[35px]">
@@ -49,25 +49,25 @@ const Hero = () => {
           <div
             className={`first-picture absolute bottom-0 transition-all duration-[1s] ease-out ${isVisible ? "left-8 opacity-100" : "left-32 opacity-0"} w-[100px] h-[100px] bg-blue-300`}
           >
-            <img src="" alt="" />
+            <img src="../../../public/IMG-20250111-WA0004.jpg" alt="" />
           </div>
 
           <div
             className={`second-picture absolute top-8 transition-all duration-[0.6s] ease-out ${isVisible ? "left-[50px] opacity-100" : "left-[150px] opacity-0"} w-[150px] h-[150px] bg-blue-300 z-10`}
           >
-            <img src="" alt="" />
+            <img src="../../../public/IMG-20250111-WA0004.jpg" alt="" />
           </div>
 
           <div
             className={`third-picture absolute bottom-0 transition-all duration-[1.2s] ease-out ${isVisible ? "right-8 opacity-100" : "right-[-128px] opacity-0"} w-[230px] h-[200px] bg-blue-400 z-0`}
           >
-            <img src="" alt="" />
+            <img src="../../../public/IMG-20250111-WA0006.jpg" alt="" />
           </div>
 
           <div
             className={`fourth-picture absolute top-0 transition-all duration-[0.9s] ease-out ${isVisible ? "right-4 opacity-100" : "right-[-100px] opacity-0"}  w-[100px] h-[100px] bg-blue-300`}
           >
-            <img src="" alt="" />
+            <img src="../../../public/IMG-20250111-WA0006.jpg" alt="" />
           </div>
         </div>
       </div>

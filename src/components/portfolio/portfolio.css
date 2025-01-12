@@ -1,0 +1,7 @@
+@media (min-width: 1200px) {
+  .portfolio-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
