@@ -20,7 +20,11 @@ export const PortfolioCard = ({ getItem }) => {
     <>
       <div className="portfolio-card-container snap-center flex flex-col items-center ">
         <div className="portfolio-image w-[360px] h-[360px] bg-slate-200 rounded-2xl">
-          <img src={image} className="w-full h-full object-cover" alt="" />
+          <img
+            src={image}
+            className="w-full h-full rounded-2xl object-cover"
+            alt=""
+          />
         </div>
 
         <div className="portfolio-info w-full my-4">
