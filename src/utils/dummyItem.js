@@ -8,7 +8,7 @@ export const projectItem = [
       "fhebf ehfihef efjoerhg efjoejhof ferjgioejrg fjeiorsjgioe gerjgiojesrg regjioersjg ergjeriojgioerg rgjieorjgio",
     category: "none",
     categoryIcon: "faGlobe",
-    image: "../../public/IMG-20250111-WA0004.png",
+    image: "/IMG-20250111-WA0004.png",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const projectItem = [
     description: "Mempermudah pengelolaan air PAM",
     category: "Web",
     categoryIcon: "faGlobe",
-    image: "../../public/IMG-20250111-WA0006.png",
+    image: "/IMG-20250111-WA0006.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const projectItem = [
     description: "Robot?",
     category: "IOT",
     categoryIcon: "faBrain",
-    image: "../../public/IMG-20250111-WA0006.png",
+    image: "/IMG-20250111-WA0006.png",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const projectItem = [
     description: "Kelola sertifikat desa",
     category: "Web",
     categoryIcon: "faGlobe",
-    image: "../../public/IMG-20250111-WA0004.png",
+    image: "/IMG-20250111-WA0004.png",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ export const projectItem = [
     description: "Solusi belanja mudah",
     category: "Web",
     categoryIcon: "faGlobe",
-    image: "../../public/IMG-20250111-WA0006.png",
+    image: "/IMG-20250111-WA0006.png",
   },
   {
     id: 6,
@@ -48,6 +48,6 @@ export const projectItem = [
     description: "Solusi belanja mudah",
     category: "Mobile",
     categoryIcon: "faPhone",
-    image: "../../public/IMG-20250111-WA0004.png",
+    image: "/IMG-20250111-WA0004.png",
   },
 ];

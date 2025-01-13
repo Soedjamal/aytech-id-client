@@ -180,6 +180,11 @@
   }
 }
 
+.partner-card-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
 @keyframes autoScrollX {
   from {
     transform: translateX(0);
