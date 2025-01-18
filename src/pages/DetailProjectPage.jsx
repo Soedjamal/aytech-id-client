@@ -16,7 +16,7 @@ const DetailProjectPage = () => {
   return (
     <>
       <Navbar showOnScroll={false} />
-      <div className="detail-portfolio-item pt-[100px] px-[35px] bg-blue-600 w-full " style={{ background: `url(${"/public/IMG-20250111-WA0006.jpg"})`, backgroundSize: "cover" }}>
+      <div className="detail-portfolio-item pt-[100px] px-[35px] bg-blue-600 w-full" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(${itemById.map((item) => {return item.image})})`, backgroundSize: "cover" }}>
         <div className="breadcrumb-container">
           <Breadcrumb
             pathOn={true}
