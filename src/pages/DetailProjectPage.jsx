@@ -16,7 +16,7 @@ const DetailProjectPage = () => {
   return (
     <>
       <Navbar showOnScroll={false} />
-      <div className="detail-portfolio-item pt-[100px] pb-[50px] px-[35px] bg-blue-600 w-full">
+      <div className="detail-portfolio-item pt-[100px] px-[35px] bg-blue-600 w-full " style={{ background: `url(${"/public/IMG-20250111-WA0006.jpg"})`, backgroundSize: "cover" }}>
         <div className="breadcrumb-container">
           <Breadcrumb
             pathOn={true}
@@ -24,7 +24,7 @@ const DetailProjectPage = () => {
             subCurrentPath={itemById[0].title || ""}
           />
         </div>
-        <div className="detail-portfolio-body">
+        <div className="detail-portfolio-body ">
           {itemById.map((item, i) => (
             <>
               <div className="detail-portfolio-group flex items-center">
@@ -44,26 +44,50 @@ const DetailProjectPage = () => {
                     <p>{item.category}</p>
                   </div>
                 </div>
-                <div className="mockup-container flex w-full justify-center py-[100px] relative">
-                  <div className="mockup absolute w-[300px] h-[200px] bg-slate-300 rounded-lg shadow-black drop-shadow-lg"></div>
+                <div className="mockup-container flex w-full justify-center mb-[100px] py-[100px] relative">
+                  <div className="mockup absolute w-[500px] h-[300px] bg-slate-300 rounded-lg shadow-black drop-shadow-lg"></div>
                 </div>
               </div>
             </>
-          ))}
+        ))}
         </div>
         <div className="portfolio-item-decription-container min-h-screen bg-white">
-          <div className="description-container grid-cols-2">
-            <h1>Description:</h1>
-          </div>
-          <div className="description-container grid-cols-2">
-            <h1>Description:</h1>
-          </div>
-          <div className="description-container grid-cols-2">
-            <h1>Description:</h1>
-          </div>
-          <div className="description-container grid-cols-2">
-            <h1>Description:</h1>
-          </div>
+          {itemById.map((item, i) => (
+            <>
+              <div className="main-container-of-description">
+              <div className="description-group">
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Deskripsi: </h1>
+                <div className="description-content">{item.description}</div>
+              </div>
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Features: </h1>
+                <div className="description-content">{item.title}</div>
+              </div>
+              </div>
+              <div className="description-group">
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Features: </h1>
+                <div className="description-content">{item.description}</div>
+              </div>
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Features: </h1>
+                <div className="description-content">{item.title}</div>
+              </div>
+              </div>
+              <div className="description-group">
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Features: </h1>
+                <div className="description-content">{item.description}</div>
+              </div>
+              <div className="description-container " key={i}>
+                <h1 className="description-title">Features: </h1>
+                <div className="description-content">{item.title}</div>
+              </div>
+              </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
       <ContactFooter />

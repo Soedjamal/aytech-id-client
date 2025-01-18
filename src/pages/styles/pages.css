@@ -41,6 +41,29 @@
     margin: 20px 0 40px 0;
     font-size: 1.5rem;
   }
+  .portfolio-item-decription-container {
+    padding: 50px 200px;
+  }
+  .description-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .description-container {
+    width: 30%;
+  }
+  .description-title {
+    font-size: 2rem;
+    font-weight: 700;
+   color: rgb(0, 102, 255);
+  }
+  .description-content {
+    font-size: 1rem;
+  }
+  .main-container-of-description {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
 }
 
 * {

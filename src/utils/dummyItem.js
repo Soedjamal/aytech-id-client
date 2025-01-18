@@ -6,6 +6,7 @@ export const projectItem = [
     category: "E-commerce",
     categoryIcon: "faShoppingCart",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Belanja mudah, hidup nyaman.",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faGlobe",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Air bersih, masa depan cerah.",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const projectItem = [
     category: "IOT",
     categoryIcon: "faRobot",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Automasi untuk masa depan.",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faGlobe",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Dokumen digital, tanpa batas.",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faWallet",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Bayar cepat, tanpa ribet.",
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const projectItem = [
     category: "Mobile",
     categoryIcon: "faMobileAlt",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Belanja praktis di genggaman.",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faChalkboardTeacher",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Belajar bersama tanpa batas.",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const projectItem = [
     category: "IOT",
     categoryIcon: "faLeaf",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Hijaukan rumah Anda.",
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faGlobe",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Kemudahan administrasi untuk desa.",
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const projectItem = [
     category: "Mobile",
     categoryIcon: "faDollarSign",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Keuangan cerdas, hidup tenang.",
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faHeartbeat",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Kesehatan keluarga dalam genggaman.",
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const projectItem = [
     category: "IOT",
     categoryIcon: "faTint",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Monitor kualitas air dengan mudah.",
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faGlobe",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Desa modern, administrasi digital.",
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faWallet",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Pembayaran cerdas, solusi cepat.",
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ export const projectItem = [
     category: "Mobile",
     categoryIcon: "faMapMarkerAlt",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Belanja di mana saja, kapan saja.",
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faBook",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Belajar tanpa batas usia.",
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ export const projectItem = [
     category: "IOT",
     categoryIcon: "faTractor",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Masa depan pertanian cerdas.",
   },
   {
     id: 18,
@@ -142,6 +159,7 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faGlobe",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Administrasi publik yang efisien.",
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ export const projectItem = [
     category: "Mobile",
     categoryIcon: "faChartLine",
     image: "/IMG-20250111-WA0004.png",
+    slogan: "Pantau pengeluaran dengan mudah.",
   },
   {
     id: 20,
@@ -158,5 +177,6 @@ export const projectItem = [
     category: "Web",
     categoryIcon: "faStethoscope",
     image: "/IMG-20250111-WA0006.png",
+    slogan: "Hubungkan pasien dan dokter Anda.",
   },
 ];
