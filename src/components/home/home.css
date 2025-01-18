@@ -112,9 +112,10 @@
   }
   .first-picture {
     position: absolute;
-    left: 65%;
-    top: 80%;
+    left: 67%;
+    top: 75%;
     width: 150px;
+    z-index: 99;
     height: 150px;
     background-color: white;
   }
@@ -128,13 +129,13 @@
     width: 350px;
     height: 350px;
     background-color: rgb(150, 150, 150);
-    bottom: -10%;
+    bottom: 0;
     right: 5%;
   }
   .fourth-picture {
     width: 200px;
     height: 200px;
-    top: 40%;
+    top: 38%;
     right: 20%;
     background-color: rgb(200, 200, 200);
   }
