@@ -114,11 +114,10 @@ const Navbar = ({ showOnScroll }) => {
           className="hidden-btn z-30 fixed top-0 left-0 bg-black opacity-30 w-full min-h-screen"
         ></div>
       ) : null}
+
+
       <nav
-        className={`nav-container z-20 drop-shadow-lg
-fixed top-0 flex justify-between items-center w-full px-[15px] 
-py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
-      >
+        className={`nav-container z-20 drop-shadow-lg fixed top-0 flex justify-between items-center w-full px-[15px] py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}>
         <div className="nav-logo flex gap-4 items-center">
           <div
             onClick={() => setSidebar(!sidebar)}
@@ -129,44 +128,50 @@ py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}
               className={`${isScroll ? "text-black" : "text-white"}`}
             />
           </div>
-          <h3
-            className={`aytech-title text-xl ${isScroll ? "text-black" : "text-white"}`}
-          >
-            AYTECH
-          </h3>
+          <div className="nav-logo-img w-[135px]">
+            <img className="w-full h-full" src={isScroll ? "/images/Logo Aytech-03.png" : "/images/Logo Aytech-22.png"} alt="logos" />
+          </div>
         </div>
 
         <div className="navbar-action flex gap-x-4">
           <ul
-            className={`nav-list-container items-center gap-x-6  ${isScroll ? "text-black" : "text-white"}`}
+            className={`nav-list-container items-center gap-x-6 font-semibold  ${isScroll ? "text-black" : "text-white"}`}
           >
-            <li className="nav-list">
+            <li className="nav-list hover:borderred ">
               <Link
-                className={`menu-link ${location.pathname === "/" ? "borderred" : ""}`}
+                className={`nav-link ${location.pathname === "/" ? "borderred" : ""}`}
                 to="/"
               >
                 Home
               </Link>
             </li>
-            <li className="nav-list">
+            <li className="nav-list hover:borderred ">
               <Link
-                className={`menu-link ${location.pathname === "/about" ? "borderred" : ""}`}
+                className={`nav-link ${location.pathname === "/about" ? "borderred" : ""}`}
                 to="/about"
               >
                 Tentang Aytech
               </Link>
             </li>
-            <li className="nav-list">
+            <li className="nav-list hover:borderred ">
               <Link
-                className={`menu-link ${location.pathname === "/portfolio" ? "borderred" : ""}`}
+                className={`nav-link ${location.pathname === "/portfolio" ? "borderred" : ""}`}
                 to="/portfolio"
               >
                 Portfolio
               </Link>
             </li>
-            <li className="nav-list">
+            <li className="nav-list hover:borderred ">
               <Link
-                className={`menu-link ${location.pathname === "/contact" ? "borderred" : ""}`}
+                className={`nav-link ${location.pathname === "/portfolio" ? "borderred" : ""}`}
+                to="/academy"
+              >
+                Akademi
+              </Link>
+            </li>
+            <li className="nav-list hover:borderred ">
+              <Link
+                className={`nav-link ${location.pathname === "/contact" ? "borderred" : ""}`}
                 to="/contact"
               >
                 Hubungi Kami

@@ -9,10 +9,11 @@
     padding: 120px 0;
   }
   .detail-portfolio-item {
+    min-height: 100vh;
     padding: 120px 0;
   }
   .detail-portfolio-body {
-    padding: 0 200px;
+    padding: 200px 200px;
   }
   .breadcrumb-container {
     padding: 0 200px;
@@ -22,7 +23,9 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 30px;
+  }
+  .portfolio-category  {
+    font-size: 1.5rem;
   }
   .portfolio-item-group {
     display: flex;
@@ -30,6 +33,13 @@
     flex: 1 1 calc(33.333% - 60px);
     box-sizing: border-box;
     margin: 0;
+  }
+  .main-product-title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    margin: 20px 0 40px 0;
+    font-size: 1.5rem;
   }
 }
 

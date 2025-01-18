@@ -76,9 +76,17 @@
 
 @media (min-width: 1200px) {
   .main-title {
-    font-size: 2.5rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 80px;
     margin-top: 40px;
+  }
+  .main-title-desc {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .second-title-desc {
+    width: 80%;
+    font-size: 1.5rem;
   }
   .hero-title {
     justify-content: start;
@@ -90,7 +98,7 @@
   .hero-container {
     /* border: 3px solid orange; */
     padding-top: 100px;
-    height: 100vh;
+    height: 80vh;
   }
   .hero-image-container {
     /* border: 3px solid magenta; */
@@ -105,28 +113,28 @@
   .first-picture {
     position: absolute;
     left: 65%;
-    top: 50%;
-    width: 400px;
-    height: 400px;
+    top: 80%;
+    width: 150px;
+    height: 150px;
     background-color: white;
   }
   .second-picture {
     position: absolute;
     background-color: rgb(100, 100, 100);
-    top: 35%;
+    top: 30%;
     left: 82%;
   }
   .third-picture {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     background-color: rgb(150, 150, 150);
-    bottom: 10%;
+    bottom: -10%;
     right: 5%;
   }
   .fourth-picture {
     width: 200px;
     height: 200px;
-    top: 20%;
+    top: 40%;
     right: 20%;
     background-color: rgb(200, 200, 200);
   }
@@ -210,4 +218,30 @@
 
 * {
   /* outline: 2px solid red; */
+}
+
+
+
+
+.portfolio-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  overflow-x: hidden; /* Menghapus overflow horizontal */
+}
+
+@media (max-width: 768px) {
+  .portfolio-card-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px;
+  }
 }

@@ -24,7 +24,7 @@ const Hero = () => {
             aplikasi mobile, dan integrasi sistem
           </p>
 
-          <p className="text-lg">
+          <p className="second-title-desc text-lg">
             Temukan solusi terbaik bersama mitra terpercaya dalam transformasi
             digital untuk bisnis Anda.
           </p>

@@ -32,7 +32,7 @@ const DetailProjectPage = () => {
                   key={i}
                   className="portfolio-title flex w-full mt-12 flex-col items-start gap-3"
                 >
-                  <h2 className=" text-2xl text-white font-semibold">
+                  <h2 className="main-product-title text-2xl text-white font-semibold">
                     {item.title}
                   </h2>
                   <h4 className="subtitle text-lg text-gray-300 text-center">
@@ -50,6 +50,20 @@ const DetailProjectPage = () => {
               </div>
             </>
           ))}
+        </div>
+        <div className="portfolio-item-decription-container min-h-screen bg-white">
+          <div className="description-container grid-cols-2">
+            <h1>Description:</h1>
+          </div>
+          <div className="description-container grid-cols-2">
+            <h1>Description:</h1>
+          </div>
+          <div className="description-container grid-cols-2">
+            <h1>Description:</h1>
+          </div>
+          <div className="description-container grid-cols-2">
+            <h1>Description:</h1>
+          </div>
         </div>
       </div>
       <ContactFooter />

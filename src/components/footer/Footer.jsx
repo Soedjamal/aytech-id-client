@@ -6,8 +6,8 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="footer-container">
-        <div className="footer-content w-full bg-gray-800 py-20  px-[35px]">
+      <div className="footer-container bg-gray-800">
+        <div className="footer-content w-full py-20 ">
           <h4 className="text-lg font-semibold text-gray-300">
             Mitra Terpercaya Dalam Transformasi Digital
           </h4>
@@ -41,7 +41,8 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="copyrights flex w-full h-32 justify-center mt-14 py-5">
+          <div className="copyrights flex w-full h-32 justify-between items-center mt-14 py-5">
+            <img className="w-[100px]" src="/images/Logo Aytech-22.png" alt="" />
             <p className="text-sm text-gray-400 text-center">
               &#169; 2024. All Rights Reserved by{" "}
               <b className="text-blue-400">
