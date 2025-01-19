@@ -23,7 +23,7 @@ const ServiceItem = ({ title, icon, description }) => {
             </div>
           </div>
 
-          <div className="service-action text-secondBlue flex items-center gap-[15px]">
+          <div className="service-action text-gray-600 flex items-center gap-[15px]">
             <Link>Lihat Solusi</Link>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>

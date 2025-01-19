@@ -21,7 +21,7 @@ const ServiceQuality = () => {
               <h4 className="text-xl font-semibold py-[20px]">
                 Keahlian Lebih dari sekian dekade
               </h4>
-              <p className="text-lg text-secondBlue">
+              <p className="text-lg text-gray-600">
                 Kami memiliki lebih dari -- tahun pengalaman yang mendalam di
                 industri teknologi, memberikan solusi berkualitas tinggi dan
                 inovatif kepada klien kami.
@@ -38,7 +38,7 @@ const ServiceQuality = () => {
               <h4 className="text-xl font-semibold py-[20px]">
                 Tingkat Penyelesaian
               </h4>
-              <p className="text-lg text-secondBlue">
+              <p className="text-lg text-gray-600 ">
                 Kami memastikan tingkat penyelesaian proyek mencapai 100%,
                 menjamin setiap aspek pekerjaan selesai sesuai dengan standar
                 kualitas yang tinggi dan sesuai dengan kebutuhan Anda.
@@ -53,7 +53,7 @@ const ServiceQuality = () => {
             </div>
             <div className="description">
               <h4 className="text-xl font-semibold py-[20px]">Mitra Kerja</h4>
-              <p className="text-lg text-secondBlue">
+              <p className="text-lg text-gray-600 ">
                 Setiap mitra kerja kami adalah bagian penting dari perjalanan
                 kami, dan kami berkomitmen untuk mendukung mereka dengan solusi
                 teknologi yang efektif dan inovatif.
