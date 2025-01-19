@@ -117,7 +117,7 @@ const Navbar = ({ showOnScroll }) => {
 
 
       <nav
-        className={`nav-container z-20 drop-shadow-lg fixed top-0 flex justify-between items-center w-full px-[15px] py-[15px] ${isScroll ? " bg-white" : "bg-transparent"}`}>
+        className={`nav-container z-20 drop-shadow-lg fixed top-0 flex justify-between items-center w-full px-[15px] py-[15px] transition-colors duration-300 ${isScroll ? " bg-white" : "bg-transparent"}`}>
         <div className="nav-logo flex gap-4 items-center">
           <div
             onClick={() => setSidebar(!sidebar)}
@@ -163,7 +163,7 @@ const Navbar = ({ showOnScroll }) => {
             </li>
             <li className="nav-list hover:borderred ">
               <Link
-                className={`nav-link ${location.pathname === "/portfolio" ? "borderred" : ""}`}
+                className={`nav-link ${location.pathname === "/academy" ? "borderred" : ""}`}
                 to="/academy"
               >
                 Akademi

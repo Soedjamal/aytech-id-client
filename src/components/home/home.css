@@ -112,9 +112,9 @@
   }
   .first-picture {
     position: absolute;
-    left: 67%;
-    top: 75%;
-    width: 150px;
+    left: 70%;
+    top: 78%;
+    width: 180px;
     z-index: 99;
     height: 150px;
     background-color: white;
@@ -122,6 +122,7 @@
   .second-picture {
     position: absolute;
     background-color: rgb(100, 100, 100);
+    width: 180px;
     top: 30%;
     left: 82%;
   }
@@ -139,6 +140,24 @@
     right: 20%;
     background-color: rgb(200, 200, 200);
   }
+  
+  .first-picture-off {
+    left: 100%;
+    opacity: 0;
+  }
+  .second-picture-off {
+    left: 100%;
+    opacity: 0;
+  }
+  .third-picture-off {
+    right: -100%;
+    opacity: 0;
+  }
+  .fourth-picture-off {
+    right: -100%;
+    opacity: 0;
+  }
+
   .portfolio-card-wrapper {
     margin: 0 200px;
   }
@@ -187,6 +206,12 @@
 
     display: flex;
   }
+  .page-main-title  {
+    font-size: 2.5rem;
+  }
+  .btn-cta-item:hover {
+    transform: translate(2px, 2px);
+  }
 }
 
 .partner-card-wrapper {
@@ -210,6 +235,7 @@
   width: 100%;
   animation: autoScrollX 10s linear infinite;
 }
+
 .partner-card-container {
   border: 1px solid black;
   border-radius: 20%;

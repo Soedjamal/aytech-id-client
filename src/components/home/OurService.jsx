@@ -13,7 +13,7 @@ const ServiceItem = ({ title, icon, description }) => {
       <div className="service-items-container w-full pb-[60px] px-[30px] pt-[100px] bg-white">
         <div className="service-item">
           <div className="service-logo bg-slate-200 flex items-center justify-center w-[100px] h-[100px] rounded-md">
-            <FontAwesomeIcon icon={icon} className="text-6xl text-blue-600" />
+            <FontAwesomeIcon icon={icon} className="text-6xl text-secondBlue" />
           </div>
 
           <div className="service-about my-[20px]">
@@ -23,7 +23,7 @@ const ServiceItem = ({ title, icon, description }) => {
             </div>
           </div>
 
-          <div className="service-action text-blue-600 flex items-center gap-[15px]">
+          <div className="service-action text-secondBlue flex items-center gap-[15px]">
             <Link>Lihat Solusi</Link>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
@@ -38,7 +38,7 @@ const OurService = () => {
     <>
       <div className="our-service-container w-full pt-[10px]">
         <div className="our-service-title flex flex-col items-center bg-gray-200 w-full pb-[30px] px-[30px] mt-[60px]">
-          <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
+          <h2 className="text-2xl tracking-[2px] text-secondBlue font-semibold text-center ">
             LAYANAN KAMI
           </h2>
           <p className="text-center mt-[40px] text-gray-700 font-semibold text-2xl tracking-[0.5px] px-[6px]">

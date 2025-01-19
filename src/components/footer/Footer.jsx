@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="copyrights flex w-full h-32 justify-between items-center mt-14 py-5">
             <img className="w-[100px]" src="/images/Logo Aytech-22.png" alt="" />
             <p className="text-sm text-gray-400 text-center">
-              &#169; 2024. All Rights Reserved by{" "}
+              &#169; {new Date().getFullYear()}. All Rights Reserved by{" "}
               <b className="text-blue-400">
                 PT. Digerati Aytech Great Solution.{" "}
               </b>

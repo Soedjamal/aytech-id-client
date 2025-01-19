@@ -6,7 +6,7 @@ const Introduction = () => {
     <>
       <div className="introduction-container">
         <div className="introduction-title bg-gray-200 flex flex-col items-center w-full py-[30px] px-[30px]">
-          <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
+          <h2 className="text-2xl tracking-[2px] text-secondBlue font-semibold text-center ">
             SIAPAKAH AYTECH GREAT SOLUTION
           </h2>
           <p className="text-center mt-[40px] text-gray-700 font-semibold text-2xl tracking-[0.5px] px-[6px]">
@@ -39,21 +39,21 @@ const Introduction = () => {
             <div className="good-service flex items-center gap-3 font-semibold mt-8">
               <FontAwesomeIcon
                 icon={faCheck}
-                className="text-lg text-blue-600"
+                className="text-lg text-secondBlue"
               />
               <h3 className="text-xl">Pengalaman lebih dari ? Tahun</h3>
             </div>
             <div className="good-service flex items-center gap-3 font-semibold mt-4">
               <FontAwesomeIcon
                 icon={faCheck}
-                className="text-lg text-blue-600"
+                className="text-lg text-secondBlue"
               />
               <h3 className="text-xl">Tingkat Penyelesaian 100%</h3>
             </div>
             <div className="good-service flex items-center gap-3 font-semibold mt-4 mb-16">
               <FontAwesomeIcon
                 icon={faCheck}
-                className="text-lg text-blue-600"
+                className="text-lg text-secondBlue"
               />
               <h3 className="text-xl">?+ Mitra Kerja</h3>
             </div>

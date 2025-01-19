@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 import { PortfolioCard } from "../components/home/Portfolio";
@@ -11,6 +11,10 @@ import "./styles/pages.css";
 const PortfolioPage = () => {
   const [isCategory, setIsCategory] = useState("View All");
 
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }, [])
+
   const selectedItem =
     isCategory === "View All"
       ? projectItem
@@ -22,7 +26,7 @@ const PortfolioPage = () => {
     <>
       <Navbar showOnScroll={false} />
       <div className="portfolio min-h-screen w-full">
-        <div className="portfolio-header pt-[100px] px-[35px] h-[350px] bg-blue-600 w-full">
+        <div className="portfolio-header pt-[100px] px-[35px] h-[350px] bg-firstBlue w-full">
           <div className="breadcrumb-container">
             <Breadcrumb currentPath="Portfolio" />
           </div>

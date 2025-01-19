@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/header/Navbar";
 import ContactFooter from "../components/shared/ContactFooter";
 import Footer from "../components/footer/Footer";
@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocation } from "@fortawesome/free-solid-svg-icons";
 
 const ContactPage = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }, [])
   return (
     <>
       <Navbar showOnScroll={false} />

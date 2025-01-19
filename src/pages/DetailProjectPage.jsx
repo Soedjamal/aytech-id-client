@@ -7,11 +7,16 @@ import { useProjectContext } from "../context/ProjectItemContxt";
 import "./styles/pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faBrain, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const DetailProjectPage = () => {
   const { isId } = useProjectContext();
 
   const itemById = projectItem.filter((item) => item.id === isId);
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }, [])
 
   return (
     <>

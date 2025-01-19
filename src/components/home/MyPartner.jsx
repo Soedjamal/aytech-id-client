@@ -39,7 +39,7 @@ const MyPartner = () => {
     <>
       <div className="my-partner-container bg-white w-full">
         <div className="my-partner-title flex flex-col items-center w-full px-[30px] mt-[60px]">
-          <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
+          <h2 className="text-2xl tracking-[2px] text-secondBlue font-semibold text-center ">
             MITRA KAMI DALAM TRANSFORMASI DIGITAL
           </h2>
           <p className="text-center mt-[40px] text-gray-500 text-lg">
@@ -51,7 +51,7 @@ const MyPartner = () => {
         </div>
 
         <div className="partner-card-wrapper py-8">
-          <div className="partner-card-group">
+        <div className="partner-card-group">
             {partnerItems.map((partner, i) => (
               <PartnerCard key={i} partnerItem={partner} />
             ))}

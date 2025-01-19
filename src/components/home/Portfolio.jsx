@@ -40,7 +40,7 @@ export const PortfolioCard = ({ getItem }) => {
 
           <div
             onClick={handleSelect}
-            className="btn-cta flex items-center gap-3 text-blue-600 mt-4"
+            className="btn-cta flex items-center gap-3 text-secondBlue mt-4"
           >
             <button>Lihat lebih detail</button>
             <FontAwesomeIcon icon={faArrowRight} />
@@ -56,7 +56,7 @@ const Portfolio = () => {
     <>
       <div className="service-quality-container ">
         <div className="service-quality-title bg-gray-200  flex flex-col items-center w-full pt-[30px] pb-[60px] px-[20px] ">
-          <h2 className="text-2xl tracking-[2px] text-blue-700 font-semibold text-center ">
+          <h2 className="page-main-title tracking-[2px] text-secondBlue font-semibold text-center ">
             PORTFOLIO
           </h2>
           <p className="text-center mt-[40px] text-gray-700 font-semibold text-2xl tracking-[0.5px] px-[6px]">
