@@ -47,27 +47,35 @@ const Hero = () => {
 
         <div className="hero-image-container relative w-full mt-[100px]  h-[350px]">
           <div
-            className={`first-picture absolute bottom-0 transition-all duration-[1s] ease-out ${isVisible ? "left-8 opacity-100" : "left-32 opacity-0"} w-[100px] h-[100px] bg-blue-300`}
+            className={`first-picture absolute bottom-0 transition-all duration-[1s] ease-out ${
+              isVisible ? "" : "n-visible left-32 opacity-0"
+            } w-[100px] h-[100px] bg-blue-300`}
           >
-            <img src="/IMG-20250111-WA0004.jpg" alt="" />
+            <img src="/azam.jpg" alt="" />
           </div>
 
           <div
-            className={`second-picture absolute top-8 transition-all duration-[0.6s] ease-out ${isVisible ? "left-[50px] opacity-100" : "left-[150px] opacity-0"} w-[150px] h-[150px] bg-blue-300 z-10`}
+            className={`second-picture absolute top-8 transition-all duration-[0.6s] ease-out shadow-xl ${
+              isVisible ? "" : "n-visible left-[150px] opacity-0"
+            } w-[150px] h-[150px] bg-blue-300 z-10`}
           >
-            <img src="/IMG-20250111-WA0006.jpg" alt="" />
+            <img src="/akmal.jpg" alt="" />
           </div>
 
           <div
-            className={`third-picture absolute bottom-0 transition-all duration-[1.2s] ease-out ${isVisible ? "right-8 opacity-100" : "right-[-128px] opacity-0"} w-[230px] h-[200px] bg-blue-400 z-0`}
+            className={`third-picture absolute bottom-0 transition-all duration-[1.2s] ease-out ${
+              isVisible ? "" : "n-visible right-[-128px] opacity-0"
+            } w-[230px] h-[200px] bg-blue-400 z-0`}
           >
             <img src="/windy.jpg" alt="" />
           </div>
 
           <div
-            className={`fourth-picture absolute top-0 transition-all duration-[0.9s] ease-out ${isVisible ? "right-4 opacity-100" : "right-[-100px] opacity-0"}  w-[100px] h-[100px] bg-blue-300`}
+            className={`fourth-picture absolute top-0 transition-all duration-[0.9s] ease-out shadow-lg ${
+              isVisible ? "" : "n-visible right-[-100px] opacity-0"
+            }  w-[100px] h-[100px] bg-blue-300`}
           >
-            <img src="/akmal.jpg" alt="" />
+            <img src="/naja.jpg" alt="" />
           </div>
         </div>
       </div>

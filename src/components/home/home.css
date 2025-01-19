@@ -226,6 +226,8 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 12px;
   }
+  .hero-container {
+  }
 }
 
 @media (max-width: 480px) {
