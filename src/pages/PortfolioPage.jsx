@@ -40,12 +40,14 @@ const PortfolioPage = () => {
           handleCategory={setIsCategory}
           selectedCategory={isCategory}
         />
-        <div className="portfolio-card-group my-10 flex gap-8 items-center ">
-          {selectedItem.map((item, i) => (
-            <div className="portfolio-item-group" key={i}>
-              <PortfolioCard getItem={item} key={i} />
-            </div>
-          ))}
+        <div className="portfolio-card-group flex justify-center gap-10">
+          <div className="portfolio-page-card flex flex-wrap w-[70%] mt-10 gap-10 justify-start items-start">
+            {selectedItem.map((item, i) => (
+              <div className="portfolio-item-group" key={i}>
+                <PortfolioCard getItem={item} key={i} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <ContactFooter />
